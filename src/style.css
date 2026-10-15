@@ -5,13 +5,13 @@
   --color-Marchica: #075985;
   --color-sable: #F5E9D3;
   --color-Turquoise: #0F766E;
-  --Blanc-casse: #FAFAF9;
+  --color-Blanc-casse: #FAFAF9;
 
 
   --font-Titre: "Lora", serif;
   --font-texte: "Poppins", sans-serif;
-  --taille-titre1 : 64px;
-  --taille-titre2 : 40px;
-  --taille-paraghraphe : 24px
+  --text-titre1-Mobile : 38px;
+  --text-titre2-Mobile : 24px;
+  --text-paraghraphe-Mobile : 18px
   
 }
