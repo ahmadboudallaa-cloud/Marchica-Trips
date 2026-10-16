@@ -10,10 +10,10 @@
 
   --font-Titre: "Lora", serif;
   --font-texte: "Poppins", sans-serif;
-  --text-titre1-Mobile : 38px;
-  --text-titre2-Mobile : 26px;
-   --text-titre3-Mobile : 30px;
-  --text-paraghraphe-Mobile : 18px;
-  --text-praghraphe-carte-Mobile : 14px;
+  --text-titre1 : 64px;
+  --text-titre2: 40px;
+   --text-titre3 : 30px;
+  --text-paraghraphe : 24px;
+  --text-praghraphe-carte: 24px;
   
 }
