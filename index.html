@@ -29,14 +29,14 @@
   <main class="w-full box-border overflow-hidden">
 
 
-    <section id="Hero-section" class="bg-[url('/images/Hero-Acceuil.webp')] bg-cover bg-center h-130 max-w-full w-full ">
+    <section id="Hero-section" class="bg-[url('/images/Hero-Acceuil.webp')] bg-cover bg-center h-130 max-w-full w-full md:h-170 ">
    
-      <div class="w-[90%] pl-2 py-20  flex flex-col gap-5">
-      <h1 class=" text-[38px] text- text-sable font-bold font-Titre">Explorez Marchica autrement.</h1>
-      <p class="text-[18px] text-Blanc-casser">Entre lagune, mer et montagnes, vivez des expériences inoubliables à Nador : kayak, balades en bateau, randonnées et découvertes locales.</p>
+      <div class="w-[90%] pl-2 py-20  flex flex-col gap-5 md:pl-5">
+      <h1 class=" text-[38px] text- text-sable font-bold font-Titre md:text-[80px]">Explorez Marchica autrement.</h1>
+      <p class="text-[18px] text-Blanc-casser md:text-[35px]">Entre lagune, mer et montagnes, vivez des expériences inoubliables à Nador : kayak, balades en bateau, randonnées et découvertes locales.</p>
       <div class="flex gap-4 mt-8">
-        <a href="pages/activites.html" class="text-Blanc-casser bg-Marchica p-3 rounded-lg font-bold text-center text-[12px]">Découvrir nos activités</a>
-        <a href="pages/reservation.html" class="border-2 border-Marchica bg-sable p-3 font-bold rounded-lg text-center text-[12px]">Réserver une expérience</a>
+        <a href="pages/activites.html" class="text-Blanc-casser bg-Marchica p-3 rounded-lg font-bold text-center text-[12px] md:text-[24px]">Découvrir nos activités</a>
+        <a href="pages/reservation.html" class="border-2 border-Marchica bg-sable p-3 font-bold rounded-lg text-center text-[12px] md: text-[24px]">Réserver une expérience</a>
       </div>
   
       </div>
@@ -46,9 +46,9 @@
 
     <section id="activites-phares" class="my-20">
 <div class="flex justify-between items-center">
-      <div id="Tres-titre" class="h-1 w-20 bg-Marchica rounded-xs"></div>
-      <h2 class="leading-none text-[26px] text-center font-bold font-Titre text-Marchica">Nos activités phares</h2>
-      <div id="Tres-titre" class="h-1 w-20 bg-Marchica rounded-xs"></div>
+      <div id="Tres-titre" class="h-1 w-[20%] bg-Marchica rounded-xs md:h-2"></div>
+      <h2 class="leading-none text-[26px] text-center font-bold font-Titre text-Marchica md: text-[55px]">Nos activités phares</h2>
+      <div id="Tres-titre" class="h-1 w-[20%] bg-Marchica rounded-xs md: h-2"></div>
 </div>
 
 <div id="cartes-activites" class="my-10 grid grid-cols-1 gap-5  place-items-center">
@@ -174,22 +174,25 @@
 
     </section>
 
-    <section id="bondaux" class="w-full h-90 bg-Marchica px-3 flex flex-col gap-6 py-10">
-      <h3 class="text-sable font-Titre text-[25px] font-bold ">PRÊT POUR L'AVENTURE ?</h3>
-      <p class="text-Blanc-casser font-texte">Votre prochaine aventure commence ici. Kayak, balade en bateau ou randonnée au Gourougou : choisissez votre expérience et profitez des merveilles de Nador.</p>
-     <a href="" class="text-Blanc-casser bg-Turquoise w-[50%] text-center py-2 rounded-lg border-sable border-2">Réserver une activité </a>
+    <section id="bondaux" class="w-full h-90 bg-Marchica px-3 flex flex-col gap-6 py-10 xl:pl-15 h-110 pt-20">
+      <h3 class="text-sable font-Titre text-[25px] font-bold md:text-[45px]  ">PRÊT POUR L'AVENTURE ?</h3>
+      <p class="text-Blanc-casser font-texte md:text-[19px] w-[80%] xl:w-[50%]">Votre prochaine aventure commence ici. Kayak, balade en bateau ou randonnée au Gourougou : choisissez votre expérience et profitez des merveilles de Nador.</p>
+     <a href="" class="text-Blanc-casser bg-Turquoise w-[50%] text-center py-2 rounded-lg border-sable border-2 md:w-[30%] mt-5 xl:w-[15%] text-[20px]">Réserver une activité </a>
 
     </section>
 
- <footer  class="bg-sable py-20 pl-2 ">
+ <footer  class="bg-sable py-20 pl-2 md:pl-0">
 
 
-  <div class=" flex flex-col gap-3 ">
+
+  <div class=" flex flex-col gap-3 md:flex-row justify-around  ">
+    <div >
     <h4 class="text-Marchica font-bold font-Titre text-[24px]">Agence Marchika Trips</h4>
-    <div>
+    <div class="xl: pt-4">
     <div class="flex items-center gap-3">
   <img src="/images/gps-marchika.webp" alt="logo localisation" class="w-10">
   <p class="font-texte text-[19px]">Plage marchika, Nador, Maroc</p>
+    </div>
     </div>
 
     <div class="flex items-center gap-3 ">
@@ -203,7 +206,7 @@
     </div>
     </div>
 
-<div class="flex flex-col gap-3 pt-4">
+<div class="flex flex-col gap-3">
 <h4 class="text-Marchica font-bold font-Titre text-[24px]">Horaires</h4>
 
   <p class="font-texte text-[19px]">Du lundi au samedi <br> de 9 h à 18 h</p>
@@ -212,7 +215,7 @@
 </div>
 
 
-<div class="flex flex-col gap-3 pt-4">
+<div class="flex flex-col gap-3">
 <h4 class="text-Marchica font-bold font-Titre text-[24px]">Plan du site</h4>
 <div class="flex flex-col font-texte text-[19px]">
  <a href="/index.html">Accueil</a>
@@ -222,8 +225,13 @@
 </div>
 
 </div>
-<div class="flex justify-center">
-<div class="flex flex-col pt-4">
+
+
+
+  </div>
+ 
+<div class="flex justify-center md:pl-25">
+<div class="flex flex-col pt-4 ">
   <h4 class="text-Marchica font-bold font-Titre text-[24px]">Resaux Sociaux</h4>
   <div class="flex gap-2 w-11 ">
     <img src="/images/instagram-marchika.webp" alt="instagram marchika" class="w-10 h-10">
@@ -234,11 +242,6 @@
 
 </div>
 </div>
-
-
-  </div>
- 
-
  </footer>
 
 
