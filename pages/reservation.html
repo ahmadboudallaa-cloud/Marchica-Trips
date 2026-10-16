@@ -8,9 +8,188 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../src/style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/> <!--icones -->
+
     <title>marchika-trips</title>
   </head>
-  <body>
+  <body class="box-border">
+    <nav class=" w-full h-[90px] bg-sable fixed z-2"> <!--fixer le navbar z-2-->
+      <div class=" flex flex-row justify-between m-0 mt-0 ">
+        <a href="index.html"> <img src="../images/logo-marchika-Photoroom.webp" alt="logo-marchica" class="w-30 h-20"></a>
+        <details class="absolute right-5 top-3 z-1 md:hidden">
+  <summary class="list-none cursor-pointer">
+    <div class="flex flex-col gap-1 pt-4">
+      <span class="block w-6 h-0.5 bg-gray-800"></span>
+      <span class="block w-6 h-0.5 bg-gray-800"></span>
+      <span class="block w-6 h-0.5 bg-gray-800"></span>
+    </div>
+  </summary>
+  <nav class="absolute right-0 top-10 w-48 bg-Blanc-casser shadow-lg rounded-lg p-4">
+    <ul class="flex flex-col gap-4">
+      <li>
+        <a href="index.html" class="hover:text-sky-700">Accueil</a>
+      </li>
+      <li>
+        <a href="activites.html" class="hover:text-sky-700">Activités</a>
+      </li>
+      <li>
+        <a href="contact.html" class="hover:text-sky-700">Réservation</a>
+      </li>
+      <li>
+        <a href="contact.html" class="hover:text-sky-700">FAQ</a>
+      </li>
+    </ul>
+  </nav>
+</details>
+<div class="hidden md:flex gap-[20px] items-center text-xl"> <!-- pour version disctop-->
+      <a href="../index.html" >Accueil</a>
+      <a href="./activites.html">Activités</a>
+      <a href="./reservation.html" class="bg-Marchica text-white p-[5px] rounded-sm">Réservation</a>
+      <a href="./faq.html">FAQ</a>
+      
+    </div>
+    </nav>
+    <main>
 
+      <!-- pour convertir en version desktop md: ou lg  -->
+    <section class=" w-full flex flex-col items-center  mx-auto xl:items-start">
+      <h1 class="text-sable font-bold absolute text-3xl  top-40 pl-4 lg:p-4 ">Explorez Marchica autrement</h1>
+      <p class="text-sable font-titre absolute text-2xl  top-60 pl-4">Préparez votre prochaine aventure à Marchica</p>
+      <img class="w-full h-100 object-cover lg:w-full" src="../images/hero-reservation.webp" alt="">
+      <div class="bg-sable h-200 w-4/5 rounded-3xl absolute top-90 md:ml-30">
+        <a href="index.html" class="text-Marchica pl-10 pt-10 relative top-3"  > &larr; Retour</a>
+        <form>
+          <div>
+            <h2 class="font-bold text-2xl text-Marchica pl-4 pt-6 "> votre réservation </h2>
+            <div class="flex pl-4 gap-4">
+            <i class="fa-solid fa-user text-xl text-gray-700"></i>  <!--icone  -->
+            <p class="text-Marchica"> informations personneles :</p>
+            <span class="w-11 lg:w-180 border-t-1 border-t-Marchica mt-4"></span> <!--Ligne acouté de informat perso -->
+            </div>
+            <div class="flex flex-col gap-1 ">
+              <div class="flex flex-col gap-1 md:gap-50 md:flex-row">
+                <div>
+              <label class="grid pl-4  font-semibold" for="nom" >Nom complete : </label>
+              <input type="text" id="nom" placeholder="Entre votre nom" class="border rounded-sm border-Marchica bg-white ml-4 pl-2 w-4/5 lg:h-[50px] lg:w-[350px]"></div>
+              <div>
+              <label class="grid pl-4 font-semibold" for="tel" >Téléphone : </label>
+              <input type="tel" id="tel" placeholder="Entrer votre Téléphone" class="border rounded-sm border-Marchica bg-white ml-4 pl-2 w-4/5  lg:h-[50px] lg:w-[350px]">
+              </div>
+            </div>
+              <label class="pl-4 font-semibold" for="email">Email :</label>
+              <input type="email" id="email" placeholder="Entrer votre email" class="border rounded-sm border-Marchica bg-white ml-4 pl-2 w-4/5 lg:h-[50px] lg:w-[600px]">
+              <div class="flex">
+              <p class="pl-4 pr-2 font-semibold">&#x1F4C5; Votre Activité :</p>
+              <span class="w-37 border-t-1 lg:w-200 border-t-Marchica mt-4"></span>
+              </div>
+              <div class="md:flex md:items-center md:justify-between">
+              <div>
+                <div class="gap-1 md:">
+                  <div class=" md:w-100 md:flex md:flex-col  ">
+                <label class="pl-4 font-semibold" for="activites" class="flex pl-4 ">Activités : </label>
+                 <select id="activites" class="border rounded-sm border-Marchica bg-white ml-4 pl-2 w-4/5 md:w-4/5 md:flex-col md:h-10 w-4/5 lg:h-[50px] lg:w-[350px]">
+                <option selected disabled>Choisir une activité</option>
+                <option>Kitesurf</option>
+                <option>Surf </option>
+                <option>Balade à dos de chameau</option>
+                <option>Pêche en mer</option>
+                <option>Excurtion en bateau</option>
+                <option>Plongée avec masque et tuba</option>
+
+                  </select>
+                  </div>
+               </div>
+               </div>
+               <div class="md:flex md:flex-col md:mr-20">
+                <label class="pl-4 font-semibold" for="date" class="flex pl-4 ">Date souhaitée : </label>
+                <input type="date" id="date" placeholder="Choisir une date" class=" border rounded-sm border-Marchica bg-white ml-4 pl-2 w-4/5 w-4/5 lg:h-[50px] lg:w-[350px]">  
+                </div>
+                </div>
+                 <label class="pl-4 font-semibold" for="num" class="flex pl-4">Nombre de personnes : </label>
+                 <input value="1" min="1" type="number" id="num" placeholder="" class="border rounded-sm border-Marchica bg-white ml-4 pl-2 w-4/5 lg:h-[50px] lg:w-[350px]">
+
+                 <label class="pl-4 font-semibold" for="msg" class="flex pl-4">Message :</label>
+                 <textarea name="msg" rows="7" id="msg" class="border rounded-sm border-Marchica bg-white ml-4 pl-2 w-4/5 mb-10"></textarea>
+                 <div class="xl:flex justify-center mx-auto">
+                 <button type="submit" class="p-4 rounded-sm bg-Marchica text-white font-semibold lg:w-120 ">Réserver maintenant</button>  
+                 </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    
+    
+  </section>
+    <div class=" bg-Marchica h-1/2 flex flex-col gap-6 mt-200 pb-12  lg: w-full ">
+      <p class="text-sable ml-4 mt-10 text-2xl">PRÊT POUR L'AVENTURE ?</p>
+      <p class="text-white font-light mx-4 mb-8">Votre prochaine aventure commence ici. Kayak, balade en bateau ou randonnée au Gourougou : choisissez votre expérience et profitez des merveilles de Nador.</p>
+    </div> 
+     <footer  class="bg-sable py-20 pl-2 md:pl-0">
+
+
+
+  <div class=" flex flex-col gap-3 md:flex-row justify-around  ">
+    <div >
+    <h4 class="text-Marchica font-bold font-Titre text-[24px]">Agence Marchika Trips</h4>
+    <div class="xl: pt-4">
+    <div class="flex items-center gap-3">
+  <img src="/images/gps-marchika.webp" alt="logo localisation" class="w-10">
+  <p class="font-texte text-[19px]">Plage marchika, Nador, Maroc</p>
+    </div>
+    </div>
+
+    <div class="flex items-center gap-3 ">
+  <img src="/images/telephone-marchika.webp" alt="logo localisation" class="w-10">
+  <p class="font-texte text-[19px]">05 36 00 00 00</p>
+    </div>
+
+    <div class="flex items-center gap-3">
+  <img src="/images/email-marchika.webp" alt="logo localisation" class="w-10">
+  <p class="font-texte text-[19px]">contact@Marchikatrip.mac</p>
+    </div>
+    </div>
+
+<div class="flex flex-col gap-3">
+<h4 class="text-Marchica font-bold font-Titre text-[24px]">Horaires</h4>
+
+  <p class="font-texte text-[19px]">Du lundi au samedi <br> de 9 h à 18 h</p>
+
+
+</div>
+
+
+<div class="flex flex-col gap-3">
+<h4 class="text-Marchica font-bold font-Titre text-[24px]">Plan du site</h4>
+<div class="flex flex-col font-texte text-[19px]">
+ <a href="/index.html">Accueil</a>
+ <a href="/pages/activites.html">Activites</a>
+ <a href="/pages/reservation.html">Reservation</a>
+ <a href="/pages/faq.html">Faq</a>
+</div>
+
+</div>
+
+
+
+  </div>
+ 
+<div class="flex justify-center md:pl-25">
+<div class="flex flex-col pt-4 ">
+  <h4 class="text-Marchica font-bold font-Titre text-[24px]">Resaux Sociaux</h4>
+  <div class="flex gap-2 w-11 ">
+    <img src="/images/instagram-marchika.webp" alt="instagram marchika" class="w-10 h-10">
+    <img src="/images/whatsapp-marchika.webp" alt="whatsapp marchika">
+    <img src="/images/facebook-marchika - Copie.webp" alt="facebook marchika">
+    <img src="/images/tik-tok-marchika.webp" alt="tik tok marchika">
+  </div>
+
+</div>
+</div>
+ </footer>
+
+</main>
   </body>
 </html>
