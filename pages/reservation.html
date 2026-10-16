@@ -14,42 +14,104 @@
 
     <title>marchika-trips</title>
   </head>
-  <body>
-    
-    <nav class=" max-w-full h-[90px] bg-sable ">
-      <div class=" flex flex-row justify-between m-10 mt-0 ">
-      <a href="index.html" class=""> <img src="../images/logo-marchika-Photoroom.webp" alt="logo-marchica" class="w-30 h-20"></a>
-
-    <div class="flex gap-[20px] items-center text-xl   ">
-      <a href="index.html" >Accueil</a>
-      <a href="pages/activites.html">Activités</a>
-      <a href="pages/reservation.html" class="bg-Marchica text-white p-[5px] rounded-sm">Réservation</a>
-      <a href="pages/faq.html">FAQ</a>
+  <body class="box-border">
+    <nav class=" w-full h-[90px] bg-sable fixed z-2"> <!--fixer le navbar z-2-->
+      <div class=" flex flex-row justify-between m-0 mt-0 ">
+        <a href="index.html"> <img src="../images/logo-marchika-Photoroom.webp" alt="logo-marchica" class="w-30 h-20"></a>
+        <details class="absolute right-5 top-3 z-1 md:hidden">
+  <summary class="list-none cursor-pointer">
+    <div class="flex flex-col gap-1 pt-4">
+      <span class="block w-6 h-0.5 bg-gray-800"></span>
+      <span class="block w-6 h-0.5 bg-gray-800"></span>
+      <span class="block w-6 h-0.5 bg-gray-800"></span>
+    </div>
+  </summary>
+  <nav class="absolute right-0 top-10 w-48 bg-Blanc-casser shadow-lg rounded-lg p-4">
+    <ul class="flex flex-col gap-4">
+      <li>
+        <a href="index.html" class="hover:text-sky-700">Accueil</a>
+      </li>
+      <li>
+        <a href="activites.html" class="hover:text-sky-700">Activités</a>
+      </li>
+      <li>
+        <a href="contact.html" class="hover:text-sky-700">Réservation</a>
+      </li>
+      <li>
+        <a href="contact.html" class="hover:text-sky-700">FAQ</a>
+      </li>
+    </ul>
+  </nav>
+</details>
+<div class="hidden md:flex gap-[20px] items-center text-xl"> <!-- pour version disctop-->
+      <a href="/index.html" >Accueil</a>
+      <a href="/pages/activites.html">Activités</a>
+      <a href="/pages/reservation.html" class="bg-Marchica text-white p-[5px] rounded-sm">Réservation</a>
+      <a href="/pages/faq.html">FAQ</a>
+      
     </div>
     </nav>
-    <section class="flex flex-col items-center">
-      <h1 class="text-sable font-bold absolute text-5xl right-140 top-70">Explorez Marchica autrement</h1>
-      <p class="text-sable font-titre absolute text-2xl right-180 top-90">│Préparez votre prochaine aventure à Marchica</p>
-      <img class="" src="../images/hero-reservation.webp" alt="">
-      <div class="bg-sable h-200 w-200 rounded-3xl absolute top-115">
-        <a href="index.html" class="text-Marchica pl-10 pt-10 relative top-3"  >&larr; Retour</a>
+    <main>
+
+      <!-- pour convertir en version desktop md: ou lg  -->
+    <section class=" w-full flex flex-col items-center  mx-auto xl:items-start">
+      <h1 class="text-sable font-bold absolute text-3xl  top-40 pl-4 lg:p-4 ">Explorez Marchica autrement</h1>
+      <p class="text-sable font-titre absolute text-2xl  top-60 pl-4">Préparez votre prochaine aventure à Marchica</p>
+      <img class="w-full h-100 object-cover lg:w-full" src="../images/hero-reservation.webp" alt="">
+      <div class="bg-sable h-190 w-4/5 rounded-3xl absolute top-90">
+        <a href="index.html" class="text-Marchica pl-10 pt-10 relative top-3"  > &larr; Retour</a>
         <form>
           <div>
-            <h2 class="font-bold text-2xl text-Marchica pl-4 pt-6"> votre réservation </h2>
+            <h2 class="font-bold text-2xl text-Marchica pl-4 pt-6 "> votre réservation </h2>
             <div class="flex pl-4 gap-4">
-            <i class="fa-solid fa-user text-xl text-gray-700 pt-1.5"></i>
-            <p class="text-2xl text-Marchica"> informations personneles :</p>
-            <span class="w-100 border-t-1 border-t-Marchica mt-5"></span>
+            <i class="fa-solid fa-user text-xl text-gray-700"></i>  <!--icone  -->
+            <p class="text-Marchica"> informations personneles :</p>
+            <span class="w-11 border-t-1 border-t-Marchica mt-4"></span> <!--Ligne acouté de informat perso -->
             </div>
-            <div class="">
-              <label for="nom" class="flex">Nom complete : </label><br>
-              <input type="text" id="nom" placeholder=" Veillez entre votre nom" class="border rounded-sm">
-              <label for="nom">Téléphone : </label>
-              <input type="text" id="nom">
+            <div class="flex flex-col gap-1 ">
+              <div class="">
+              <label class="pl-4 font-semibold" for="nom" >Nom complete : </label>
+              <input type="text" id="nom" placeholder="Entre votre nom" class="border rounded-sm border-Marchica bg-white ml-4 pl-2 w-4/5 lg:h-[50px] lg:w-[350px]">
+              <label class="pl-4 font-semibold" for="tel" >Téléphone : </label>
+              <input type="tel" id="tel" placeholder="Entrer votre Téléphone" class="border rounded-sm border-Marchica bg-white ml-4 pl-2 w-4/5  lg:h-[50px] lg:w-[350px]">
+              </div>
+              <label class="pl-4 font-semibold" for="email">Email :</label>
+              <input type="email" id="email" placeholder="Entrer votre email" class="border rounded-sm border-Marchica bg-white ml-4 pl-2 w-4/5">
+              <div class="flex">
+              <p class="pl-4 pr-2 font-semibold">&#x1F4C5; Votre Activité :</p>
+              <span class="w-37 border-t-1 border-t-Marchica mt-4"></span>
+              </div>
+              <div>
+                <label class="pl-4 font-semibold" for="activites" class="flex pl-4">Activités : </label>
+                 <select id="activites" class="border rounded-sm border-Marchica bg-white ml-4 pl-2 w-4/5">
+                <option value="" selected disabled>Choisir une activité</option>
+                <option>Kitesurf</option>
+                <option>Surf </option>
+                <option>Balade à dos de chameau</option>
+                <option>Pêche en mer</option>
+                <option>Excurtion en bateau</option>
+                <option>Plongée avec masque et tuba</option>
+
+              </select>
+                <label class="pl-4 font-semibold" for="date" class="flex pl-4 ">Date souhaitée : </label>
+                <input type="date" id="date" placeholder="Choisir une date" class=" border rounded-sm border-Marchica bg-white ml-4 pl-2 w-4/5">
+                 <label class="pl-4 font-semibold" for="num" class="flex pl-4">Nombre de personnes : </label>
+                 <input type="number" id="num" placeholder="" class="border rounded-sm border-Marchica bg-white ml-4 pl-2 w-4/5">
+                 <label class="pl-4 font-semibold" for="msg" class="flex pl-4">Message :</label>
+                 <textarea name="msg" rows="6" id="msg" class="border rounded-sm border-Marchica bg-white ml-4 pl-2 w-4/5 mb-10"></textarea>
+                 <div class="xl:flex justify-center w-[100%]">
+                 <button type="submit" class="p-4 rounded-sm bg-Marchica text-white font-semibold ml-10 lg:w-120 ">Réserver maintenant</button>  
+                 </div>
+              </div>
             </div>
           </div>
         </form>
       </div>
+    <div class="mt-12 bg-Marchica h-1/2 flex flex-col gap-6 mt-200 pb-12  lg: w-full ">
+      <p class="text-sable ml-4 mt-10 text-2xl">PRÊT POUR L'AVENTURE ?</p>
+      <p class="text-white font-light mx-4 mb-8">Votre prochaine aventure commence ici. Kayak, balade en bateau ou randonnée au Gourougou : choisissez votre expérience et profitez des merveilles de Nador.</p>
+    </div> 
     </section>
+    </main>
   </body>
 </html>
