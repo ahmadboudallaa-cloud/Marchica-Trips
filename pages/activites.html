@@ -12,24 +12,53 @@
     href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="../src/style.css">
-  <title>acctiviter</title>
+  <title>activiter</title>
 </head>
 
 <body>
-  <nav class=" max-w-full h-[90px] bg-sable ">
-    <div class=" flex flex-row justify-between m-10 mt-0 ">
-      <a href="index.html" class=""> <img src="../images/logo-marchika-Photoroom.webp" alt="logo-marchica"
-          class="w-30 h-20"></a>
+     <nav class=" w-full h-[90px] bg-sable  ">
+      <div class=" flex flex-row justify-between mx-8 ">
+      <a href="index.html" class=""> <img src="./../images/logo-marchika-Photoroom.webp" alt="logo-marchica" class="w-30 h-20"></a>
 
-      <div class="flex gap-[20px] items-center text-xl   ">
-        <a href="../index.html" class="bg-Marchica text-white p-[5px] rounded-sm">Accueil</a>
-        <a href="./activites.html">Activités</a>
-        <a href="./reservation.html">Réservation</a>
-        <a href="./faq.html">FAQ</a>
-      </div>
+
+ <details class="absolute right-5 top-3 z-1 md:hidden">
+  <summary class="list-none cursor-pointer">
+    <div class="flex flex-col gap-1 pt-4">
+      <span class="block w-6 h-0.5 bg-gray-800"></span>
+      <span class="block w-6 h-0.5 bg-gray-800"></span>
+      <span class="block w-6 h-0.5 bg-gray-800"></span>
+    </div>
+  </summary>
+  <div class="absolute right-0 top-10 w-48 bg-Blanc-casser shadow-lg rounded-lg p-4">
+    <ul class="flex flex-col gap-4">
+      <li>
+        <a href="./../index.html" class="hover:text-sky-700">Accueil</a>
+      </li>
+      <li>
+        <a href="./activites.html" class="hover:text-sky-700">Activités</a>
+      </li>
+      <li>
+        <a href="./reservation.html" class="hover:text-sky-700">Réservation</a>
+      </li>
+      <li>
+        <a href="./faq.html" class="hover:text-sky-700">FAQ</a>
+      </li>
+    </ul>
+  </div>
+</details>
+
+
+    <div class="hidden md:flex gap-[20px] items-center text-xl   ">
+      <a href="./../index.html" >Accueil</a>
+      <a href="./activites.html" class="bg-Marchica text-white p-[5px] rounded-sm ">Activités</a>
+      <a href="./reservation.html">Réservation</a>
+      <a href="./faq.html">FAQ</a>
     </div>
 
+
+    </div>
   </nav>
+
 
   <main>
     <section>
@@ -52,7 +81,7 @@
       <div class="flex  justify-between items-center lg:justify-center lg:gap-10 ">
         <div class="h-1 w-[100px] bg-Turquoise lg:w-[400px]  lg:text-4xl   md:[300px] "></div>
         <h2 class="text-Marchica text-[20px] text-center font-bold font-Titre leading-none  h-[25px] lg:text-[26px]">Nos
-          activités phares </h2>
+          activités  </h2>
 
         <div class="h-1 w-[100px] bg-Turquoise lg:w-[400px] md:[300px]"></div>
 
@@ -87,7 +116,7 @@
             inoubliable sur les plages marocaines.</p>
 
           <a class="text-sable bg-Turquoise p-[10px] mt-[20px] rounded-[10px] w-[50%] text-center hover:bg-sable hover:text-Marchica"
-            href="">Plus de
+            href="./activites/Surf.html">Plus de
             détails</a>
         </div>
         <div class="w-[90%] h-full lg:w-auto  p-3 bg-Marchica  rounded-sm flex flex-col  items-center justify-between ">
@@ -119,7 +148,7 @@
             traditions des pêcheurs locaux.</p>
 
           <a class="text-sable bg-Turquoise p-[10px] mt-[20px] rounded-[10px] w-[50%] text-center hover:bg-sable hover:text-Marchica"
-            href="">Plus de
+            href="./activites/  Pêche-en-mer.html">Plus de
             détails</a>
         </div>
         <div class="w-[90%] h-full lg:w-auto p-3 bg-Marchica  rounded-sm flex flex-col  items-center justify-between ">
@@ -134,7 +163,7 @@
             côtes marocaines.</p>
 
           <a class="text-sable bg-Turquoise p-[10px] mt-[20px] rounded-[10px] w-[50%] text-center hover:bg-sable hover:text-Marchica"
-            href="">Plus de
+            href="./activites/Excursion-en-bateau.html">Plus de
             détails</a>
         </div>
         <div class="w-[90%] h-full lg:w-auto  p-3 bg-Marchica  rounded-sm flex flex-col  items-center justify-between ">
@@ -151,7 +180,7 @@
             cristalline.</p>
 
           <a class="text-sable bg-Turquoise p-[10px] mt-[20px] rounded-[10px] w-[50%] text-center hover:bg-sable hover:text-Marchica"
-            href="">Plus de
+            href="./activites/Plongée.html">Plus de
             détails</a>
         </div>
         <div class="w-[90%] h-full lg:w-auto  p-3 bg-Marchica  rounded-sm flex flex-col  items-center justify-between ">
@@ -165,7 +194,7 @@
             mer.</p>
 
           <a class="text-sable bg-Turquoise p-[10px] mt-[20px] rounded-[10px] w-[50%] text-center hover:bg-sable hover:text-Marchica"
-            href="">Plus de
+            href="./activites/Paddle.html">Plus de
             détails</a>
         </div>
         <div class="w-[90%] h-full lg:w-auto  p-3 bg-Marchica  rounded-sm flex flex-col  items-center justify-between ">
@@ -179,7 +208,7 @@
             sensations.</p>
 
           <a class="text-sable bg-Turquoise p-[10px] mt-[20px] rounded-[10px] w-[50%] text-center hover:bg-sable hover:text-Marchica"
-            href="">Plus de
+            href="./activites/Kitesurf.html">Plus de
             détails</a>
         </div>
 
@@ -187,9 +216,79 @@
     </section>
 
 
+   <section id="bondaux" class="w-full h-90 bg-Marchica px-3 flex flex-col gap-6 py-10 xl:pl-15 h-110 pt-20 mt-20">
+      <h3 class="text-sable font-Titre text-[25px] font-bold md:text-[45px]  ">PRÊT POUR L'AVENTURE ?</h3>
+      <p class="text-Blanc-casser font-texte md:text-[19px] w-[80%] xl:w-[50%]">Votre prochaine aventure commence ici. Kayak, balade en bateau ou randonnée au Gourougou : choisissez votre expérience et profitez des merveilles de Nador.</p>
+     <a href="" class="text-Blanc-casser bg-Turquoise w-[50%] text-center py-2 rounded-lg border-sable border-2 md:w-[30%] md:mt-5 xl:w-[15%] xl:text-[20px]">Réserver une activité </a>
+
+    </section>
+
 
 
   </main>
+
+   <footer  class="bg-sable py-20 pl-2 md:pl-0">
+
+
+
+  <div class=" flex flex-col gap-3 md:flex-row justify-around  ">
+    <div >
+    <h4 class="text-Marchica font-bold font-Titre text-[24px]">Agence Marchika Trips</h4>
+    <div class="xl:pt-4">
+    <div class="flex items-center gap-3">
+  <img src="/images/gps-marchika.webp" alt="logo localisation" class="w-10">
+  <p class="font-texte text-[19px]">Plage marchika, Nador, Maroc</p>
+    </div>
+    </div>
+
+    <div class="flex items-center gap-3 ">
+  <img src="/images/telephone-marchika.webp" alt="logo localisation" class="w-10">
+  <p class="font-texte text-[19px]">05 36 00 00 00</p>
+    </div>
+
+    <div class="flex items-center gap-3">
+  <img src="/images/email-marchika.webp" alt="logo localisation" class="w-10">
+  <p class="font-texte text-[19px]">contact@Marchikatrip.mac</p>
+    </div>
+    </div>
+
+<div class="flex flex-col gap-3">
+<h4 class="text-Marchica font-bold font-Titre text-[24px]">Horaires</h4>
+
+  <p class="font-texte text-[19px]">Du lundi au samedi <br> de 9 h à 18 h</p>
+
+
+</div>
+
+
+<div class="flex flex-col gap-3">
+<h4 class="text-Marchica font-bold font-Titre text-[24px]">Plan du site</h4>
+<div class="flex flex-col font-texte text-[19px]">
+ <a href="/index.html">Accueil</a>
+ <a href="/pages/activites.html">Activites</a>
+ <a href="/pages/reservation.html">Reservation</a>
+ <a href="/pages/faq.html">Faq</a>
+</div>
+
+</div>
+
+
+
+  </div>
+ 
+<div class="flex justify-center md:pl-25">
+<div class="flex flex-col pt-4 ">
+  <h4 class="text-Marchica font-bold font-Titre text-[24px]">Resaux Sociaux</h4>
+  <div class="flex gap-2 w-11 ">
+    <img src="/images/instagram-marchika.webp" alt="instagram marchika" class="w-10 h-10">
+    <img src="/images/whatsapp-marchika.webp" alt="whatsapp marchika">
+    <img src="/images/facebook-marchika - Copie.webp" alt="facebook marchika">
+    <img src="/images/tik-tok-marchika.webp" alt="tik tok marchika">
+  </div>
+
+</div>
+</div>
+ </footer>
 
 </body>
 
