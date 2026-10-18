@@ -15,20 +15,50 @@
     <title>marchika-trips</title>
   </head>
   <body class="box-border">
-      <nav class=" w-full h-[90px] bg-sable  ">
+          <nav class=" w-full h-[90px] bg-sable  ">
       <div class=" flex flex-row justify-between mx-8 ">
-      <a href="index.html" class=""> <img src="../images/logo-marchika-Photoroom.webp" alt="logo-marchica" class="w-30 h-20"></a>
+      <a href="index.html" class=""> <img src="./../images/logo-marchika-Photoroom.webp" alt="logo-marchica" class="w-30 h-20"></a>
 
-    <div class=" flex gap-[20px] items-center text-xl  ">
-      <a href="../index.html"  >Accueil</a>
-      <a href="./activites.html">Activités</a>
-      <a href="./reservation.html">Réservation</a>
-      <a href="./faq.html" class="bg-Marchica text-white p-[5px] rounded-sm">FAQ</a>
+
+ <details class="absolute right-5 top-3 z-1 md:hidden">
+  <summary class="list-none cursor-pointer">
+    <div class="flex flex-col gap-1 pt-4">
+      <span class="block w-6 h-0.5 bg-gray-800"></span>
+      <span class="block w-6 h-0.5 bg-gray-800"></span>
+      <span class="block w-6 h-0.5 bg-gray-800"></span>
+    </div>
+  </summary>
+  <div class="absolute right-0 top-10 w-48 bg-Blanc-casser shadow-lg rounded-lg p-4">
+    <ul class="flex flex-col gap-4">
+      <li>
+        <a href="./../index.html" class="hover:text-sky-700">Accueil</a>
+      </li>
+      <li>
+        <a href="./activites.html" class="hover:text-sky-700">Activités</a>
+      </li>
+      <li>
+        <a href="./reservation.html" class="hover:text-sky-700">Réservation</a>
+      </li>
+      <li>
+        <a href="./faq.html" class="hover:text-sky-700">FAQ</a>
+      </li>
+    </ul>
+  </div>
+</details>
+
+
+    <div class="hidden md:flex gap-[20px] items-center text-xl   ">
+      <a href="./index.html" class="bg-Marchica text-white p-[5px] rounded-sm ">Accueil</a>
+      <a href="./pages/activites.html">Activités</a>
+      <a href="./pages/reservation.html">Réservation</a>
+      <a href="./pages/faq.html">FAQ</a>
     </div>
 
 
     </div>
   </nav>
+
+
   
 
 

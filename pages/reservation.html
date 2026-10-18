@@ -15,10 +15,12 @@
     <title>marchika-trips</title>
   </head>
   <body class="box-border">
-    <nav class=" w-full h-[90px] bg-sable fixed z-2"> <!--fixer le navbar z-2-->
-      <div class=" flex flex-row justify-between m-0 mt-0 ">
-        <a href="index.html"> <img src="../images/logo-marchika-Photoroom.webp" alt="logo-marchica" class="w-30 h-20"></a>
-        <details class="absolute right-5 top-3 z-1 md:hidden">
+     <nav class=" w-full h-[90px] bg-sable  ">
+      <div class=" flex flex-row justify-between mx-8 ">
+      <a href="index.html" class=""> <img src="./../images/logo-marchika-Photoroom.webp" alt="logo-marchica" class="w-30 h-20"></a>
+
+
+ <details class="absolute right-5 top-3 z-1 md:hidden">
   <summary class="list-none cursor-pointer">
     <div class="flex flex-col gap-1 pt-4">
       <span class="block w-6 h-0.5 bg-gray-800"></span>
@@ -26,31 +28,37 @@
       <span class="block w-6 h-0.5 bg-gray-800"></span>
     </div>
   </summary>
-  <nav class="absolute right-0 top-10 w-48 bg-Blanc-casser shadow-lg rounded-lg p-4">
+  <div class="absolute right-0 top-10 w-48 bg-Blanc-casser shadow-lg rounded-lg p-4">
     <ul class="flex flex-col gap-4">
       <li>
-        <a href="index.html" class="hover:text-sky-700">Accueil</a>
+        <a href="./../index.html" class="hover:text-sky-700">Accueil</a>
       </li>
       <li>
-        <a href="activites.html" class="hover:text-sky-700">Activités</a>
+        <a href="./activites.html" class="hover:text-sky-700">Activités</a>
       </li>
       <li>
-        <a href="contact.html" class="hover:text-sky-700">Réservation</a>
+        <a href="./reservation.html" class="hover:text-sky-700">Réservation</a>
       </li>
       <li>
-        <a href="contact.html" class="hover:text-sky-700">FAQ</a>
+        <a href="./faq.html" class="hover:text-sky-700">FAQ</a>
       </li>
     </ul>
-  </nav>
+  </div>
 </details>
-<div class="hidden md:flex gap-[20px] items-center text-xl mr-12"> <!-- pour version disctop-->
-      <a href="/index.html" >Accueil</a>
-      <a href="/pages/activites.html">Activités</a>
-      <a href="/pages/reservation.html" class="bg-Marchica text-white p-[5px] rounded-sm">Réservation</a>
-      <a href="/pages/faq.html">FAQ</a>
-      
+
+
+    <div class="hidden md:flex gap-[20px] items-center text-xl   ">
+      <a href="./index.html" class="bg-Marchica text-white p-[5px] rounded-sm ">Accueil</a>
+      <a href="./pages/activites.html">Activités</a>
+      <a href="./pages/reservation.html">Réservation</a>
+      <a href="./pages/faq.html">FAQ</a>
     </div>
-    </nav>
+
+
+    </div>
+  </nav>
+
+
     <main>
 
       <!-- pour convertir en version desktop md: ou lg  -->
