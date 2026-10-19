@@ -12,7 +12,7 @@ export default defineConfig({
         activites: resolve(import.meta.dirname, 'pages/activites.html'),
         reservation: resolve(import.meta.dirname, 'pages/reservation.html'),
         faq: resolve(import.meta.dirname, 'pages/faq.html'),
-        'peche-en-mer': resolve(import.meta.dirname, 'pages/activites/Pêche-en-mer.html'),
+       'peche-en-mer': resolve(import.meta.dirname, 'pages/activites/Pêche-en-mer.html'),
 'excursion-en-bateau': resolve(import.meta.dirname, 'pages/activites/Excursion-en-bateau.html'),
 'jet-ski': resolve(import.meta.dirname, 'pages/activites/Jet-Ski.html'),
 'kitesurf': resolve(import.meta.dirname, 'pages/activites/Kitesurf.html'),
